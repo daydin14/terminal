@@ -1,9 +1,9 @@
-import Terminal from './Terminal'
+import Terminal from './components/Terminal'
 
 function App() {
   return (
     <>
-      <section>
+      <section className="terminal-page">
         <Terminal />
       </section>
     </>
