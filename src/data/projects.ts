@@ -1,39 +1,121 @@
-const Projects = [
-    {
-        name: 'File Converter',
-        githubRepoLink: 'https://github.com/daydin14/file-converter',
-        liveDemoLink: 'https://daydin14.github.io/file-converter/',
-    },
-    {
-        name: "Password Generator",
-        githubRepoLink: 'https://github.com/daydin14/password-generator',
-        liveDemoLink: 'https://daydin14.github.io/password-generator/',
-    },
-    {
-        name: "Allenhurst Cleaners",
-        githubRepoLink: 'https://github.com/daydin14/allenhurstcleaners_v2',
-        liveDemoLink: 'https://allenhurstcleaners.netlify.app/',
-    },
-    {
-        name: "Drink Generator",
-        githubRepoLink: 'https://github.com/daydin14/drink-generator',
-        liveDemoLink: 'https://daydin14.github.io/drink-generator/',
-    },
-    {
-        name: "Chalkboard Games",
-        githubRepoLink: 'https://github.com/daydin14/chalkboard-games',
-        liveDemoLink: 'https://daydin14.github.io/chalkboard-games/',
-    },
-    {
-        name: "Guess Number Game",
-        githubRepoLink: 'https://github.com/daydin14/guessNumberGame',
-        liveDemoLink: 'https://daydin14.github.io/guessNumberGame',
-    },
-    {
-        name: "Joker Blazor",
-        githubRepoLink: 'https://github.com/daydin14/JokerBlazor',
-        liveDemoLink: 'https://daydin14.github.io/JokerBlazor/',
-    },
-];
+    import type { Project } from '../types'
 
-export default Projects;
+    // David's real repos. The commit lists are a snapshot taken on 2026-11-25.
+    // To add a project: copy one block below, change the values. That's all.
+
+    export const projects: Project[] = [
+    {
+    slug: 'portfolio',
+    name: 'Portfolio',
+    description: 'My portfolio website: projects, skills and a playground with this terminal.',
+    repo: 'https://github.com/daydin14/daydin14.github.io',
+    live: 'https://daydin14.github.io/',
+    branch: 'master',
+    log: [
+        { hash: 'e07275da7880b538f49658de97998c218277a52c', date: '2026-11-24', author: 'David Aydin', message: 'V2.0 (#23)' },
+        { hash: '68f2787916188a02c5a5dd39191f6fe1df3edb59', date: '2026-11-19', author: 'David Aydin', message: 'V1.1 (#22)' },
+        { hash: '2fc3d6a5fb37956da1c47f6129f861a309ec17d8', date: '2024-11-19', author: 'David Aydin', message: 'Merge pull request #7 from daydin14:v-1.0.2' },
+        { hash: '3a4d680c241c2ed189c97d842d1b741cd31dba31', date: '2024-11-19', author: 'David Aydin', message: 'ESLinted' },
+        { hash: 'd668ef82ca9a722b855f0aa65d1aa6f2ac0f9c9e', date: '2024-11-19', author: 'David Aydin', message: 'Update README' },
+    ],
+    },
+    {
+    slug: 'drink-generator',
+    name: 'Drink Generator',
+    description: 'Search cocktails, filter by what\'s in the cabinet, and pour a random drink (TheCocktailDB).',
+    repo: 'https://github.com/daydin14/drink-generator',
+    live: 'https://daydin14.github.io/drink-generator/',
+    branch: 'master',
+    log: [
+        { hash: 'dff69e1b08dc9ff85da30745abb7c8754376ec13', date: '2026-11-19', author: 'David Aydin', message: 'Use master as the default branch' },
+        { hash: 'f958dc63f8d1d817085eb5f6218719851fe7c9d3', date: '2026-11-19', author: 'Cursor Agent', message: 'Modernize the drink generator on Vite and TheCocktailDB.' },
+        { hash: '74c1d727dd519dc5205c18a982a82da171391489', date: '2022-12-11', author: 'daydin14', message: 'footer update and random function started' },
+        { hash: '231c470f1ed4d7721e390fe70602a5127887063a', date: '2022-11-29', author: 'daydin14', message: 'background doesn\'t exceed width' },
+        { hash: 'b12ca1f6389ac260981cccab008e48132eb53953', date: '2022-11-28', author: 'David Aydin', message: 'home css' },
+    ],
+    },
+    {
+    slug: 'chalkboard-games',
+    name: 'Chalkboard Games',
+    description: 'Classic games on a digital chalkboard: Rock Paper Scissors, Tic Tac Toe, Hangman and Connect 4.',
+    repo: 'https://github.com/daydin14/chalkboard-games',
+    live: 'https://daydin14.github.io/chalkboard-games/',
+    branch: 'master',
+    log: [
+        { hash: 'b9937a6424987a830e8412ab287c23ec13314cf6', date: '2026-11-19', author: 'David Aydin', message: 'Modernize Chalkboard Games onto Vite (#2)' },
+        { hash: '44992152500c5907790ef04bdc1e7cec0b16608e', date: '2024-10-08', author: 'David Aydin', message: 'Merge pull request #1 from daydin14:v-0.2.0' },
+        { hash: 'ec1e5eb0567c613291816c1b21248947117f57f0', date: '2024-10-08', author: 'David Aydin', message: 'Added UI screenshots in README.md' },
+        { hash: '7b8c9fde9c1e38d2702b29b7a4b9b9e767f3662d', date: '2024-10-08', author: 'David Aydin', message: 'Update repo readme' },
+        { hash: 'eecc8c78ea9bbb1e089b5e5325e2461ede0eaa68', date: '2024-10-08', author: 'David Aydin', message: 'Refactor pages for useIsMobile hook' },
+    ],
+    },
+    {
+    slug: 'password-generator',
+    name: 'Password Generator',
+    description: 'Generates a secure password and splits it into groups that are easy to read and type.',
+    repo: 'https://github.com/daydin14/password-generator',
+    live: 'https://daydin14.github.io/password-generator/',
+    branch: 'master',
+    log: [
+        { hash: 'f275e998859bb2521c044aa6c88650fe72422f3d', date: '2026-11-19', author: 'David Aydin', message: 'Modernize the password generator on Vite. (#5)' },
+        { hash: '045703b9244a0a052fddad630a186616295bf28b', date: '2024-10-09', author: 'David Aydin', message: 'Update Repo README.md' },
+        { hash: 'd9bf7e61374aeeed0a2b74ef56a605b29edf6fc5', date: '2024-10-09', author: 'David Aydin', message: 'Added Functionality, Added Responsive Design, Fixed Dependency Warning (#3)' },
+        { hash: '61dc5825b993d6e9e78378b0fed30c623d640477', date: '2024-10-08', author: 'David Aydin', message: 'Added Routing, Fixed Linter issues, and Updated Layout with Tailwind CSS (#2)' },
+        { hash: '51fd469b371a7b2f10a0fa2b2b9d34688360568c', date: '2024-10-08', author: 'David Aydin', message: 'Created Password Generator App (#1)' },
+    ],
+    },
+    {
+    slug: 'JokerBlazor',
+    name: 'Joker Blazor',
+    description: 'A Blazor WebAssembly joke app on .NET 10: ask JokeAPI for jokes and blacklist topics.',
+    repo: 'https://github.com/daydin14/JokerBlazor',
+    live: 'https://daydin14.github.io/JokerBlazor/',
+    branch: 'master',
+    log: [
+        { hash: '7e37c30f743a969444fa49555fe5691b72dee70e', date: '2026-11-19', author: 'David Aydin', message: 'Publish JokerBlazor as standalone WebAssembly on .NET 10 (#9)' },
+        { hash: '0c273acec809f064965d7016ec3c7e48a63a2e48', date: '2024-09-18', author: 'David Aydin', message: 'Create dotnet.yml new workflow' },
+        { hash: '5a746ef791e310a9be3fdf84df14e8197e91d32b', date: '2024-09-18', author: 'David Aydin', message: 'Delete .github/workflows/dotnet.yml' },
+        { hash: 'aaa317e12f4e6c0e4d29d99242a84feaf342c445', date: '2024-09-13', author: 'David Aydin', message: 'Update publish directory in dotnet.yml' },
+        { hash: '536f819bb478aee7cc68629de061a642f14564b2', date: '2024-09-13', author: 'David Aydin', message: 'Update working directory in dotnet.yml' },
+    ],
+    },
+    {
+    slug: 'file-converter',
+    name: 'File Converter',
+    description: 'Convert images, PDFs and spreadsheets in the browser. Files never leave your device.',
+    repo: 'https://github.com/daydin14/file-converter',
+    live: 'https://daydin14.github.io/file-converter/',
+    branch: 'master',
+    log: [
+        { hash: 'c87b6b9e71172b6ae632daba787764cf639de38e', date: '2026-11-19', author: 'Cursor Agent', message: 'Add an in-browser file converter.' },
+        { hash: '3595de8bd0419c86045efd6762c8d096cb5d01bc', date: '2026-11-19', author: 'David Aydin', message: 'Initial commit' },
+    ],
+    },
+    {
+    slug: 'terminal',
+    name: 'Terminal',
+    description: 'This interactive terminal: xterm.js + React, powered by my dotfiles.',
+    repo: 'https://github.com/daydin14/terminal',
+    live: 'https://daydin14.github.io/terminal/',
+    branch: 'master',
+    log: [
+        { hash: '5453b7ad09ca041648475b374a39d6f2cd5562d6', date: '2026-11-24', author: 'David Aydin', message: 'Merge pull request #1 from daydin14/v1.0' },
+        { hash: '2f1cb49b7289a9b28b6467d0e59dbfcc7487932e', date: '2026-11-24', author: 'daydin14', message: 'npm create vite@latest' },
+        { hash: 'cfdcc3e0c6ea2afdbf2604f02c8935b5091884cc', date: '2026-11-24', author: 'Cursor Agent', message: 'Initial commit' },
+    ],
+    },
+    {
+    slug: 'dotfiles',
+    name: 'Dotfiles',
+    description: 'My Bash profile: NVM setup plus a colorful prompt with a random emoji and git branch. This terminal loads it.',
+    repo: 'https://github.com/daydin14/dotfiles',
+    branch: 'master',
+    log: [
+        { hash: '3277f11f9184b3e9499bec258353a0a8669a89e4', date: '2026-11-24', author: 'daydin14', message: 'Refactor random emoji generator and update prompt format for improved aesthetics' },
+        { hash: 'fbab7e058b0f029130fe1e458e04a019c895b860', date: '2026-11-19', author: 'daydin14', message: 'Added Git Branch distinction to profile' },
+        { hash: 'a64400922ce66625709c7a6f424a0c10a365e903', date: '2026-11-14', author: 'daydin14', message: 'Update .bash_profile and README.md to enhance prompt customization and documentation' },
+        { hash: 'be1454d62e6e9e9a82c616de6881abba8474b153', date: '2026-11-14', author: 'daydin14', message: 'Update README.md to provide description of Bash profile features and quick install guide' },
+        { hash: 'c5f1acc90d70c3f4afbc46baa6142dad2b416e0f', date: '2026-11-14', author: 'daydin14', message: 'Load NVM, Display Random Emoji' },
+    ],
+    },
+]
